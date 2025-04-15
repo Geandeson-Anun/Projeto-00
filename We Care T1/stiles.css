@@ -1,0 +1,97 @@
+* {
+    font-family: "Montserrat", sans-serif;
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+   link rel="stylesheet" href="stiles.css"
+}
+header {
+margin: 44px 0 144px 76px;
+}
+.link-header {
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+color: #989D9C;
+margin-right: 23px;
+}
+.button-header {
+     background: #665AE1;
+     width: 130;
+height: 41;
+border: none;
+border-radius: 50px;
+font-size: 24px;
+line-height: 100%;
+font-weight: 600;
+color: #FFFFFF;
+padding: 12px 25px;
+cursor: pointer;
+}
+.logo-image {
+    width: 568;
+    height: 500;
+    margin-left: 125px;
+    display: inline-block;
+
+}
+.container {
+    width: 100%;
+}
+.section1 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: 10;
+    float: left;
+}
+.section2 {
+    display: inline-block;
+    width: 50%; 50px;
+    vertical-align: 10;
+    float: right;
+    padding: 5px;
+    
+}
+h1 {
+   font-weight: 900;
+   font-size: 100px;
+   line-height: 122px;
+   color: #515151;
+
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 71px;
+    color: #515151;
+}
+p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 87px;
+    color: #848484; 
+    
+    
+    
+    
+}
+.reducao {
+    padding: 20;
+    margin: 10;
+}
+.button-main {
+    background:#ADFF00;
+    border-radius: 60px;
+    width: 239px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow( 0px 4px 4px 0px #00000040);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26.2px;
+    color: #000000;
+    
+
+}

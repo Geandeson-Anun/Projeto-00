@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #8A51FC;
+}
+
+.logo {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
+
+main {
+    width: 375px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+label {
+    color: #777777;
+    font-weight: 400; /* Mudado de font-size para font-weight */
+    line-height: 14px; /* Mantido o line-height */
+}
+
+select,
+input {
+    background: #ffffff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700; /* Mantido o font-weight */
+    font-size: 16px; /* Mantido o font-size */
+    color: #555555;
+    cursor: pointer;
+}
+
+button {
+    width: 327px;
+    height: 48px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #772FD3;
+    color: #ffffff;
+    font-weight: 700; /* Mantido o font-weight */
+    font-size: 18px; /* Mantido o font-size */
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6; /* Mantido o valor corrigido */
+}
+
+section {
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    border: 1px solid #772FD3;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    margin: 15px 0;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    color: #777777;
+    font-weight: 400; /* Mudado para font-weight */
+    font-size: 14px; /* Mantido o font-size */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currency-value,
+.currency-value-to-convert {
+    color: #555555;
+    font-weight: 700; /* Mantido o font-weight */
+    font-size: 20px; /* Mantido o font-size */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.currency-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100px; /* Defina a altura do contêiner conforme necessário */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

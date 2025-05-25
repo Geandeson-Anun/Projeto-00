@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-Anun</title>
+</head>
+<body>
+    <input placeholder ="Digite o nome do contato">
+    <p></p>
+    <button onclick="search()">Procurar Contato</button>
+    
+</body>
+
+<script>
+
+      let p = document.querySelector("p")
+      let input = document.querySelector("input")
+
+      const contacts = [
+        {name: "Romário" , number: "(21) 95123-3456" },
+        {name: "Bebeto" , number: "(71) 98723-8356" },
+        {name: "Rivaldo" , number: "(81) 96529-3736" },
+        {name: "Ronaldo" , number: "(11) 95629-0912" },
+      ]
+
+      function search(){
+
+        for(let i = 0; i < contacts.length ; i++){
+
+        if(input.value.toLowerCase === contacts[i].name.toLowerCase){
+        p.innerHTML = `Contato Encontrado Nome: ${contacts[i].name} Tel: ${contacts[i].number}`
+
+        break
+       }
+        else {
+        p.innerHTML = "Contato não encontrado, tente novamente"
+        }
+        }
+      } 
+
+</script>
+</html>

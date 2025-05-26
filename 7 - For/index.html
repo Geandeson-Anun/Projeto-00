@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -9,35 +8,40 @@
     <input placeholder ="Digite o nome do contato">
     <p></p>
     <button onclick="search()">Procurar Contato</button>
-    
 </body>
 
 <script>
+    // Seleciona o parágrafo e o input do HTML
+    let p = document.querySelector("p");
+    let input = document.querySelector("input");
 
-      let p = document.querySelector("p")
-      let input = document.querySelector("input")
+    // Lista de contatos
+    const contacts = [
+        {name: "Romário", number: "(21) 95123-3456"},
+        {name: "Bebeto", number: "(71) 98723-8356"},
+        {name: "Rivaldo", number: "(81) 96529-3736"},
+        {name: "Ronaldo", number: "(11) 95629-0912"},
+    ];
 
-      const contacts = [
-        {name: "Romário" , number: "(21) 95123-3456" },
-        {name: "Bebeto" , number: "(71) 98723-8356" },
-        {name: "Rivaldo" , number: "(81) 96529-3736" },
-        {name: "Ronaldo" , number: "(11) 95629-0912" },
-      ]
+    function search() {
+        // Inicializa uma variável para verificar se algum contato foi encontrado
+        let found = false;
 
-      function search(){
-
-        for(let i = 0; i < contacts.length ; i++){
-
-        if(input.value.toLowerCase === contacts[i].name.toLowerCase){
-        p.innerHTML = `Contato Encontrado Nome: ${contacts[i].name} Tel: ${contacts[i].number}`
-
-        break
-       }
-        else {
-        p.innerHTML = "Contato não encontrado, tente novamente"
+        // Loop através da lista de contatos
+        for (let i = 0; i < contacts.length; i++) {
+            // Verifica se o nome do contato (em minúsculas) é igual ao que foi digitado (também em minúsculas)
+            if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
+                // Se encontrado, exibe o nome e o número
+                p.innerHTML = `Contato Encontrado: Nome: ${contacts[i].name} Tel: ${contacts[i].number}`;
+                found = true; // Marca que o contato foi encontrado
+                break; // Sai do loop já que encontramos o contato
+            }
         }
-        }
-      } 
 
+        // Se nenhum contato foi encontrado, exibe a mensagem de erro
+        if (!found) {
+            p.innerHTML = "Contato não encontrado, tente novamente.";
+        }
+    }
 </script>
 </html>

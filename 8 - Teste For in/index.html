@@ -1,0 +1,46 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-Anun</title>
+</head>
+<body>
+    <input placeholder ="Digite o nome do contato">
+    <p></p>
+    <button onclick="search()">Procurar Contato</button>
+</body>
+
+<script>
+    // Seleciona o parágrafo e o input do HTML
+    let p = document.querySelector("p");
+    let input = document.querySelector("input");
+
+    // Lista de contatos
+    const contacts = [
+        {name: "Romário", number: "(21) 95123-3456"},
+        {name: "Bebeto", number: "(71) 98723-8356"},
+        {name: "Rivaldo", number: "(81) 96529-3736"},
+        {name: "Ronaldo", number: "(11) 95629-0912"},
+    ];
+
+    function search() {
+        // Inicializa uma variável para verificar se algum contato foi encontrado
+        let found = false;
+
+        // Usa forEach para percorrer a lista de contatos
+        contacts.forEach(contact => {
+            // Verifica se o nome do contato (em minúsculas) é igual ao que foi digitado (também em minúsculas)
+            if (input.value.toLowerCase() === contact.name.toLowerCase()) {
+                // Se encontrado, exibe o nome e o número
+                p.innerHTML = `Contato Encontrado: Nome: ${contact.name} Tel: ${contact.number}`;
+                found = true; // Marca que o contato foi encontrado
+            }
+        });
+
+        // Se nenhum contato foi encontrado, exibe a mensagem de erro
+        if (!found) {
+            p.innerHTML = "Contato não encontrado, tente novamente.";
+        }
+    }
+</script>
+</html>

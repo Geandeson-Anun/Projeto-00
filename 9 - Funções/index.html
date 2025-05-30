@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket-cash</title>
+    
+</head>
+<body>
+
+    
+
+    <script>
+        
+        const cart = [10, 244, 99, 2, 20, 33, 250];
+        let finalValue = 0;
+        let totalWithoutDiscount = 0;
+
+        function calculateDiscount(price, discount){
+         const result = (price * discount) / 100;
+         return result; 
+         
+        
+        }
+        
+
+         cart.forEach(value => {
+
+            totalWithoutDiscount += value;
+
+            if (value > 30) { 
+                const discount = calculateDiscount(value, 10);
+                finalValue = finalValue + (value - discount);
+            }
+            else{
+            finalValue += value;
+            }
+
+          
+            
+        });
+
+        const youSaved =  totalWithoutDiscount - finalValue
+
+        // Formata os valores para duas casas decimais
+        const formattedFinalValue = finalValue.toFixed(2);
+        const formattedTotalWithoutDiscount = totalWithoutDiscount.toFixed(2);
+        const formattedyouSaved = youSaved.toFixed(2);
+
+        // Exibe os valores no console
+        console.log(`Valor total com desconto: R$ ${formattedFinalValue}`);
+        console.log(`Valor total sem desconto: R$ ${formattedTotalWithoutDiscount}`);
+        console.log(`Você economizou: R$ ${formattedyouSaved}`);
+    
+    
+</script>
+
+</body>
+</html>

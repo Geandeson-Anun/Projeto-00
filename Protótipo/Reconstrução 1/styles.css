@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+header {
+margin-left: 42px;
+margin-top: 47px;
+
+}
+
+.link {
+    font-weight: 400;
+    font-size: 14px;
+    margin-right: 32px;
+    line-height: 100%;
+    letter-spacing: 0.88;
+    text-align: center;
+    color: #172330;
+}
+
+img {
+    
+   display: inline-block;
+   margin: 163px 0 0 121px;
+   width: 500px; /* Defina a largura da imagem */
+    margin-right: 20px; /* Espaço à direita da imagem */
+    
+}
+
+section {
+    display: inline-block;
+    margin-left: 83px;
+    width: 493px;
+    margin-top: 200px;
+}
+
+p {
+    margin-top: 27px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.5;
+    color: #4b505a;
+    
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    letter-spacing: 0,59;
+    color: #161a49;
+    
+    }
+
+button {
+    background: #6fbf44;
+    border: 1px solid #4cb538;
+    border-radius: 6px;
+    width: 124px;
+    height: 51px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color: #ffffff;
+    }
+
+    .link-button {
+        margin-bottom: 100px;
+        
+    }
+
+    .container {
+        display: flex; /* Usar Flexbox para alinhar a imagem e a seção */
+    align-items: flex-start; /* Alinha a imagem e a seção no topo */
+    
+    }
